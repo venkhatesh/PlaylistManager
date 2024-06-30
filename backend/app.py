@@ -45,7 +45,7 @@ def get_all_songs():
     response = {
         'current_page' : page,
         'total_pages': total_pages,
-        'items_per_page': total_items,
+        'items_per_page': per_page,
         'songs':songs
     }
     return jsonify(response)
