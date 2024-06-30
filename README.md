@@ -139,6 +139,15 @@ Make sure you have Docker and Docker Compose installed on your system. You can d
   3. The table shows all the items in a batch of 10 rows at a time. Used pagination in the table view to see all the batches of 10 rows.
   4. Each column of the table is sortable. On clicking the column it toggles the column values in the ascending or descending order.
   5. User can input the song title, frontend requests a api call and searches the db, further use can rate it in the fetched data.
-  6. User can rate it with a scale of 5 stars. The ratings are stored in the db. 
+  6. User can rate it with a scale of 5 stars. The ratings are stored in the db.
+
+### Screenshots
+- All paginated songs
+
+ ![Playlist data from json](screenshots/tabular.png)
+
+- Search song by title
+
+![Search by title](screenshots/search.png)
   
 
