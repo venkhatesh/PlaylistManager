@@ -12,6 +12,7 @@ CORS(app)
 DATABASE = 'database/songs.db'
 db_manager = DatabaseManager(db_path=DATABASE)
 
+#method to fill db from json file
 def init_db(file_path):
     with open(file_path) as f:
         json_data = json.load(f)
@@ -21,6 +22,7 @@ def init_db(file_path):
     db_manager.initialize_db(processor.df)
     print("Database initialized Successfully")
 
+#endpoint to fill the db with custom json file
 @app.route('/initdb', methods=['POST'])
 def init_db_route():
     if 'file' not in request.files:
@@ -34,6 +36,7 @@ def init_db_route():
     init_db(file_path)
     return jsonify({'message' : ' Database initialized successfully'})
 
+#endpoint to get all songs with pagination
 @app.route('/songs',methods=['GET'])
 def get_all_songs():
     page = request.args.get('page',1,type=int)
@@ -50,6 +53,7 @@ def get_all_songs():
     }
     return jsonify(response)
 
+#endpoint to get song by title
 @app.route('/song',methods=['GET'])
 def get_song_byt_title():
     title = request.args.get('title')
@@ -59,6 +63,7 @@ def get_song_byt_title():
     else:
         return jsonify({'error': 'Song not found'}), 404
     
+ #endpoint to rate the song   
 @app.route('/rate',methods=['POST'])
 def rate_song():
     data = request.json
