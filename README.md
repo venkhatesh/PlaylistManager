@@ -81,7 +81,7 @@ Make sure you have Docker and Docker Compose installed on your system. You can d
       - Query Parameters:
         - `page`: Page number (default 1)
         - `perPage`: Number of items per page (default 10)
-      - Respons:
+      - Response:
         ```sh
           {
             "total_items": 100,
@@ -99,7 +99,7 @@ Make sure you have Docker and Docker Compose installed on your system. You can d
               ...
             ]
           }
-      ```
+         ```
       
   2. `GET/song` - Given a title as input, return all the attributes of that song.
       - Description: Retrieve details of a song by its title.
