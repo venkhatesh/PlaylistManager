@@ -19,45 +19,71 @@ class DatabaseManager:
         return conn
 
     def initialize_db(self, df):
-        df = df.astype(str)
-        conn = self.get_connection()
-        df.to_sql(self.table_name, conn, if_exists='replace', index=False)
-        conn.close()
+        try:
+            df = df.astype(str)
+            conn = self.get_connection()
+            if conn:
+                df.to_sql(self.table_name, conn, if_exists='replace', index=False)
+                conn.close()
+            else:
+                print("Failed to initialize database")
+        except Exception as e:
+            print(f"Error initializing database: {e}")
 
     def get_all_songs(self, page, per_page):
-        offset = (page - 1) * per_page
-        conn = self.get_connection()
-        cursor = conn.cursor()
-        cursor.execute(f"SELECT COUNT(*) FROM {self.table_name}")
-        total_items = cursor.fetchone()[0]
-        cursor.execute(f"SELECT * FROM {self.table_name} LIMIT {per_page} OFFSET {offset}")
-        songs = cursor.fetchall()
-        col_names = [desc[0] for desc in cursor.description]
-        conn.close()
-        return {
-            'total_items': total_items,
-            'songs': [dict(zip(col_names, song)) for song in songs]
-        }
+        try:
+            offset = (page - 1) * per_page
+            conn = self.get_connection()
+            cursor = conn.cursor()
+            if conn:
+                cursor.execute(f"SELECT COUNT(*) FROM {self.table_name}")
+                total_items = cursor.fetchone()[0]
+                cursor.execute(f"SELECT * FROM {self.table_name} LIMIT {per_page} OFFSET {offset}")
+                songs = cursor.fetchall()
+                col_names = [desc[0] for desc in cursor.description]
+                conn.close()
+                return {
+                    'total_items': total_items,
+                    'songs': [dict(zip(col_names, song)) for song in songs]
+                }
+            else:
+                print("Failed to retrieve songs")
+                return {'total_items':0, 'songs':[]}
+        except sqlite3.error as e:
+            print(f"Error retrieving songs: {e}")
+            return {'total_items':0, 'songs':[]}
 
     def get_song_by_title(self, title):
-        conn = self.get_connection()
-        cursor = conn.cursor()
-        cursor.execute(f"SELECT * FROM {self.table_name} WHERE title = ?", (title,))
-        song = cursor.fetchone()
-        conn.close()
-        if song:
-            col_names = [desc[0] for desc in cursor.description]
-            return dict(zip(col_names, song))
-        return None
+        try:
+            conn = self.get_connection()
+            cursor = conn.cursor()
+            cursor.execute(f"SELECT * FROM {self.table_name} WHERE title = ?", (title,))
+            song = cursor.fetchone()
+            conn.close()
+            if song:
+                col_names = [desc[0] for desc in cursor.description]
+                return dict(zip(col_names, song))
+            return None
+        except sqlite3.error as e:
+            print(f"Error retrieving song by title: {e}")
+            return None
 
     def rate_song(self, title, rating):
-        conn = self.get_connection()
-        cursor = conn.cursor()
-        cursor.execute(f"UPDATE {self.table_name} SET star_rating = ? WHERE title = ?", (rating, title))
-        conn.commit()
-        rowcount = cursor.rowcount
-        conn.close()
-        return rowcount
+        try:
+            conn = self.get_connection()
+            if conn:
+                cursor = conn.cursor()
+                cursor.execute(f"UPDATE {self.table_name} SET star_rating = ? WHERE title = ?", (rating, title))
+                conn.commit()
+                rowcount = cursor.rowcount
+                conn.close()
+                return rowcount
+            else:
+                print(f"Error rating song: {e}")
+                return 0
+        except sqlite3.Error as e:
+            print(f"Error rating song: {e}")
+            return 0
 
     def __del__(self):
         if hasattr(self, 'conn'):
