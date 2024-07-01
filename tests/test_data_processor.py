@@ -52,6 +52,6 @@ class TestDataProcessor(unittest.TestCase):
         print("test_data_integrity passed")
 
 if __name__ == '__main__':
-    unittest.main()
+    unittest.main(verbosity=2)
 
 

@@ -42,5 +42,5 @@ class TestDatabaseManager(unittest.TestCase):
         self.assertEqual(int(song['star_rating']),3)
 
 if __name__ == '__main__':
-    unittest.main()
+    unittest.main(verbosity=2)
 

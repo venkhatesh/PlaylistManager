@@ -1,0 +1,39 @@
+2024-07-01 05:55:28,712 - routes.song_routes - INFO - Initializing database
+2024-07-01 05:55:28,738 - routes.song_routes - INFO - Database initialized Successfully
+2024-07-01 05:55:28,750 - werkzeug - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:5000
+ * Running on http://172.19.0.2:5000
+2024-07-01 05:55:28,750 - werkzeug - INFO - [33mPress CTRL+C to quit[0m
+2024-07-01 05:55:28,751 - werkzeug - INFO -  * Restarting with stat
+2024-07-01 05:55:28,999 - routes.song_routes - INFO - Initializing database
+2024-07-01 05:55:29,015 - routes.song_routes - INFO - Database initialized Successfully
+2024-07-01 05:55:29,018 - werkzeug - WARNING -  * Debugger is active!
+2024-07-01 05:55:29,019 - werkzeug - INFO -  * Debugger PIN: 415-872-941
+2024-07-01 05:55:40,756 - routes.song_routes - INFO - Fetching all songs
+2024-07-01 05:55:40,757 - routes.song_routes - INFO - Songs fetched successfully
+2024-07-01 05:55:40,760 - werkzeug - INFO - 192.168.65.1 - - [01/Jul/2024 05:55:40] "GET /songs?page=1&perPage=10 HTTP/1.1" 200 -
+2024-07-01 05:55:40,762 - routes.song_routes - INFO - Fetching all songs
+2024-07-01 05:55:40,763 - routes.song_routes - INFO - Songs fetched successfully
+2024-07-01 05:55:40,763 - werkzeug - INFO - 192.168.65.1 - - [01/Jul/2024 05:55:40] "GET /songs?page=1&perPage=10 HTTP/1.1" 200 -
+2024-07-01 05:56:14,182 - routes.song_routes - INFO - Initializing database
+2024-07-01 05:56:14,214 - routes.song_routes - INFO - Database initialized Successfully
+2024-07-01 05:56:14,215 - werkzeug - INFO - 192.168.65.1 - - [01/Jul/2024 05:56:14] "POST /initdb HTTP/1.1" 200 -
+2024-07-01 05:56:43,892 - werkzeug - INFO -  * Detected change in '/app/backend/routes/song_routes.py', reloading
+2024-07-01 05:56:43,964 - werkzeug - INFO -  * Restarting with stat
+2024-07-01 05:56:44,273 - routes.song_routes - INFO - Initializing database
+2024-07-01 05:56:44,287 - routes.song_routes - INFO - Database initialized Successfully
+2024-07-01 05:56:44,290 - werkzeug - WARNING -  * Debugger is active!
+2024-07-01 05:56:44,290 - werkzeug - INFO -  * Debugger PIN: 415-872-941
+2024-07-01 05:57:00,500 - werkzeug - INFO -  * Detected change in '/app/backend/routes/song_routes.py', reloading
+2024-07-01 05:57:00,571 - werkzeug - INFO -  * Restarting with stat
+2024-07-01 05:57:00,793 - routes.song_routes - INFO - Initializing database
+2024-07-01 05:57:00,807 - routes.song_routes - INFO - Database initialized Successfully
+2024-07-01 05:57:00,809 - werkzeug - WARNING -  * Debugger is active!
+2024-07-01 05:57:00,810 - werkzeug - INFO -  * Debugger PIN: 415-872-941
+2024-07-01 05:57:09,885 - routes.song_routes - INFO - Fetching all songs
+2024-07-01 05:57:09,887 - routes.song_routes - INFO - Songs fetched successfully
+2024-07-01 05:57:09,889 - werkzeug - INFO - 192.168.65.1 - - [01/Jul/2024 05:57:09] "GET /songs?page=2&perPage=10 HTTP/1.1" 200 -
+2024-07-01 05:57:11,606 - routes.song_routes - INFO - Fetching all songs
+2024-07-01 05:57:11,609 - routes.song_routes - INFO - Songs fetched successfully
+2024-07-01 05:57:11,610 - werkzeug - INFO - 192.168.65.1 - - [01/Jul/2024 05:57:11] "GET /songs?page=3&perPage=10 HTTP/1.1" 200 -
