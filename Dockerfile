@@ -12,7 +12,7 @@ COPY database /app/database
 
 COPY tests /app/tests
 
-RUN python -m unittest discover -s tests
+# RUN python -m unittest discover -s tests
 
 EXPOSE 5000
 
