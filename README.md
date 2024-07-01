@@ -53,10 +53,15 @@ Make sure you have Docker and Docker Compose installed on your system. You can d
 ### Project Details
 
   - **Backend:**
-    - `app.py`: Main Flask application file.
+    - `app.py`: Entry point for the backend application, sets up the Flask app, registers the routes, and configures error handling.
+    - `config.py`: Contains the configurations settings for the application like logging path, JSON file path, database path.
+    - `song_routes.py`: This file defines the routes for the API, like get all songs, get a song by title and rate a song.
     - `data_processor.py`: Contains the `DataProcessor` class for normalizing and processing song data.
     - `database_manager.py`: Contains the `DatabaseManager` class for managing database operations.
     - `requirements.txt`: Python dependencies
+   
+  - **logs:**
+     - `playlistmanager.log`: This file contains the logs of all the operations in the backend.    
    
   - **Database:**
     - `songs.db`: SQLite database file.
