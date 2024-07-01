@@ -144,10 +144,10 @@ Make sure you have Docker and Docker Compose installed on your system. You can d
 ### Screenshots
 - All paginated songs
 
- ![Playlist data from json](screenshots/tabular.png)
+ ![Playlist data from json](assets/tabular.png)
 
 - Search song by title
 
-![Search by title](screenshots/search.png)
+![Search by title](assets/search.png)
   
 
