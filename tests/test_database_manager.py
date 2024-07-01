@@ -15,7 +15,7 @@ class TestDatabaseManager(unittest.TestCase):
             'tempo':[120,130],
             'star_rating':[4,5]
         })
-        self.db_manager.initialize_db(self.test_data,db_name='test_songs')
+        self.db_manager.initialize_db(self.test_data)
 
 
     def test_initialize_db(self):

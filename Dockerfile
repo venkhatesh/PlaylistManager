@@ -14,7 +14,7 @@ COPY tests /app/tests
 
 RUN mkdir -p /app/logs
 
-# RUN python -m unittest discover -s tests -v 
+RUN python -m unittest discover -s tests -v 
 
 EXPOSE 5000
 

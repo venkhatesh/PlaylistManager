@@ -37,3 +37,83 @@
 2024-07-01 05:57:11,606 - routes.song_routes - INFO - Fetching all songs
 2024-07-01 05:57:11,609 - routes.song_routes - INFO - Songs fetched successfully
 2024-07-01 05:57:11,610 - werkzeug - INFO - 192.168.65.1 - - [01/Jul/2024 05:57:11] "GET /songs?page=3&perPage=10 HTTP/1.1" 200 -
+2024-07-01 06:05:08,969 - routes.song_routes - INFO - Initializing database
+2024-07-01 06:05:08,982 - routes.song_routes - INFO - Database initialized Successfully
+2024-07-01 06:05:08,993 - werkzeug - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:5000
+ * Running on http://172.19.0.2:5000
+2024-07-01 06:05:08,993 - werkzeug - INFO - [33mPress CTRL+C to quit[0m
+2024-07-01 06:05:08,994 - werkzeug - INFO -  * Restarting with stat
+2024-07-01 06:05:09,286 - routes.song_routes - INFO - Initializing database
+2024-07-01 06:05:09,308 - routes.song_routes - INFO - Database initialized Successfully
+2024-07-01 06:05:09,311 - werkzeug - WARNING -  * Debugger is active!
+2024-07-01 06:05:09,312 - werkzeug - INFO -  * Debugger PIN: 415-872-941
+2024-07-01 06:05:18,173 - routes.song_routes - INFO - Fetching all songs
+2024-07-01 06:05:18,177 - routes.song_routes - INFO - Songs fetched successfully
+2024-07-01 06:05:18,183 - werkzeug - INFO - 192.168.65.1 - - [01/Jul/2024 06:05:18] "GET /songs?page=1&perPage=10 HTTP/1.1" 200 -
+2024-07-01 06:05:18,186 - routes.song_routes - INFO - Fetching all songs
+2024-07-01 06:05:18,188 - routes.song_routes - INFO - Songs fetched successfully
+2024-07-01 06:05:18,188 - werkzeug - INFO - 192.168.65.1 - - [01/Jul/2024 06:05:18] "GET /songs?page=1&perPage=10 HTTP/1.1" 200 -
+2024-07-01 06:05:19,238 - routes.song_routes - INFO - Fetching all songs
+2024-07-01 06:05:19,241 - routes.song_routes - INFO - Songs fetched successfully
+2024-07-01 06:05:19,241 - werkzeug - INFO - 192.168.65.1 - - [01/Jul/2024 06:05:19] "GET /songs?page=1&perPage=10 HTTP/1.1" 200 -
+2024-07-01 06:05:19,244 - routes.song_routes - INFO - Fetching all songs
+2024-07-01 06:05:19,246 - routes.song_routes - INFO - Songs fetched successfully
+2024-07-01 06:05:19,247 - werkzeug - INFO - 192.168.65.1 - - [01/Jul/2024 06:05:19] "GET /songs?page=1&perPage=10 HTTP/1.1" 200 -
+2024-07-01 06:05:20,108 - routes.song_routes - INFO - Fetching all songs
+2024-07-01 06:05:20,109 - routes.song_routes - INFO - Songs fetched successfully
+2024-07-01 06:05:20,110 - werkzeug - INFO - 192.168.65.1 - - [01/Jul/2024 06:05:20] "GET /songs?page=1&perPage=10 HTTP/1.1" 200 -
+2024-07-01 06:05:20,112 - routes.song_routes - INFO - Fetching all songs
+2024-07-01 06:05:20,114 - routes.song_routes - INFO - Songs fetched successfully
+2024-07-01 06:05:20,115 - werkzeug - INFO - 192.168.65.1 - - [01/Jul/2024 06:05:20] "GET /songs?page=1&perPage=10 HTTP/1.1" 200 -
+2024-07-01 06:05:23,547 - werkzeug - INFO - 192.168.65.1 - - [01/Jul/2024 06:05:23] "OPTIONS /rate HTTP/1.1" 200 -
+2024-07-01 06:05:23,556 - routes.song_routes - INFO - Rating song
+2024-07-01 06:05:23,562 - routes.song_routes - INFO - Rating for song'11:11' updated to 5
+2024-07-01 06:05:23,562 - werkzeug - INFO - 192.168.65.1 - - [01/Jul/2024 06:05:23] "POST /rate HTTP/1.1" 200 -
+2024-07-01 06:05:25,321 - routes.song_routes - INFO - Fetching all songs
+2024-07-01 06:05:25,324 - routes.song_routes - INFO - Songs fetched successfully
+2024-07-01 06:05:25,325 - werkzeug - INFO - 192.168.65.1 - - [01/Jul/2024 06:05:25] "GET /songs?page=1&perPage=10 HTTP/1.1" 200 -
+2024-07-01 06:05:25,328 - routes.song_routes - INFO - Fetching all songs
+2024-07-01 06:05:25,330 - routes.song_routes - INFO - Songs fetched successfully
+2024-07-01 06:05:25,333 - werkzeug - INFO - 192.168.65.1 - - [01/Jul/2024 06:05:25] "GET /songs?page=1&perPage=10 HTTP/1.1" 200 -
+2024-07-01 06:05:26,217 - routes.song_routes - INFO - Fetching all songs
+2024-07-01 06:05:26,220 - routes.song_routes - INFO - Songs fetched successfully
+2024-07-01 06:05:26,220 - werkzeug - INFO - 192.168.65.1 - - [01/Jul/2024 06:05:26] "GET /songs?page=1&perPage=10 HTTP/1.1" 200 -
+2024-07-01 06:05:26,223 - routes.song_routes - INFO - Fetching all songs
+2024-07-01 06:05:26,225 - routes.song_routes - INFO - Songs fetched successfully
+2024-07-01 06:05:26,226 - werkzeug - INFO - 192.168.65.1 - - [01/Jul/2024 06:05:26] "GET /songs?page=1&perPage=10 HTTP/1.1" 200 -
+2024-07-01 06:06:27,684 - routes.song_routes - INFO - Initializing database
+2024-07-01 06:06:27,700 - routes.song_routes - INFO - Database initialized Successfully
+2024-07-01 06:06:27,706 - werkzeug - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:5000
+ * Running on http://172.19.0.2:5000
+2024-07-01 06:06:27,706 - werkzeug - INFO - [33mPress CTRL+C to quit[0m
+2024-07-01 06:06:27,707 - werkzeug - INFO -  * Restarting with stat
+2024-07-01 06:06:27,922 - routes.song_routes - INFO - Initializing database
+2024-07-01 06:06:27,938 - routes.song_routes - INFO - Database initialized Successfully
+2024-07-01 06:06:27,941 - werkzeug - WARNING -  * Debugger is active!
+2024-07-01 06:06:27,943 - werkzeug - INFO -  * Debugger PIN: 415-872-941
+2024-07-01 06:06:40,955 - routes.song_routes - INFO - Fetching all songs
+2024-07-01 06:06:40,962 - routes.song_routes - INFO - Songs fetched successfully
+2024-07-01 06:06:40,967 - werkzeug - INFO - 192.168.65.1 - - [01/Jul/2024 06:06:40] "GET /songs?page=1&perPage=10 HTTP/1.1" 200 -
+2024-07-01 06:06:40,971 - routes.song_routes - INFO - Fetching all songs
+2024-07-01 06:06:40,972 - routes.song_routes - INFO - Songs fetched successfully
+2024-07-01 06:06:40,973 - werkzeug - INFO - 192.168.65.1 - - [01/Jul/2024 06:06:40] "GET /songs?page=1&perPage=10 HTTP/1.1" 200 -
+2024-07-01 06:06:41,654 - routes.song_routes - INFO - Fetching all songs
+2024-07-01 06:06:41,657 - routes.song_routes - INFO - Songs fetched successfully
+2024-07-01 06:06:41,659 - werkzeug - INFO - 192.168.65.1 - - [01/Jul/2024 06:06:41] "GET /songs?page=1&perPage=10 HTTP/1.1" 200 -
+2024-07-01 06:06:41,662 - routes.song_routes - INFO - Fetching all songs
+2024-07-01 06:06:41,663 - routes.song_routes - INFO - Songs fetched successfully
+2024-07-01 06:06:41,665 - werkzeug - INFO - 192.168.65.1 - - [01/Jul/2024 06:06:41] "GET /songs?page=1&perPage=10 HTTP/1.1" 200 -
+2024-07-01 06:06:43,997 - werkzeug - INFO - 192.168.65.1 - - [01/Jul/2024 06:06:43] "OPTIONS /rate HTTP/1.1" 200 -
+2024-07-01 06:06:44,005 - routes.song_routes - INFO - Rating song
+2024-07-01 06:06:44,011 - routes.song_routes - INFO - Rating for song'3AM' updated to 5
+2024-07-01 06:06:44,012 - werkzeug - INFO - 192.168.65.1 - - [01/Jul/2024 06:06:44] "POST /rate HTTP/1.1" 200 -
+2024-07-01 06:06:45,574 - routes.song_routes - INFO - Fetching all songs
+2024-07-01 06:06:45,576 - routes.song_routes - INFO - Songs fetched successfully
+2024-07-01 06:06:45,578 - werkzeug - INFO - 192.168.65.1 - - [01/Jul/2024 06:06:45] "GET /songs?page=1&perPage=10 HTTP/1.1" 200 -
+2024-07-01 06:06:45,581 - routes.song_routes - INFO - Fetching all songs
+2024-07-01 06:06:45,584 - routes.song_routes - INFO - Songs fetched successfully
+2024-07-01 06:06:45,584 - werkzeug - INFO - 192.168.65.1 - - [01/Jul/2024 06:06:45] "GET /songs?page=1&perPage=10 HTTP/1.1" 200 -
